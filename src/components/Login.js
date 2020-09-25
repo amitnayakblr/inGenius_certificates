@@ -101,7 +101,7 @@ class Login extends Component {
                 </Button>
               </abc>
             )}
-            
+
             <br></br>
             <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
                 <Link color="primary" href="/verify">
@@ -115,11 +115,11 @@ class Login extends Component {
           {/* Footer */}
           <footer className={classes.footer}>
             <Typography variant="h6" align="center" gutterBottom>
-              With <span role="img" aria-label="heart">❤️</span> from DSC NSEC
+              With <span role="img" aria-label="heart">❤️</span> from inGenius
             </Typography>
             <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-              <Link color="inherit" href="https://dscnsec.com">
-                Explore DSC NSEC
+              <Link color="inherit" href="https://dscnsec.com"> {/*change link*/}
+                Explore inGenius
               </Link>
             </Typography>
           </footer>

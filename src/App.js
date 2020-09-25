@@ -14,8 +14,6 @@ import { myFirebase } from './firebase/firebase';
 
 function App(props) {
   const { isAuthenticated, isVerifying } = props;
-
-  
     console.log("Check");
     if (myFirebase.auth().isSignInWithEmailLink(window.location.href)) {
       var email = window.localStorage.getItem('emailForSignIn');

@@ -72,15 +72,15 @@ class Verify extends Component {
             events: [],
             result: false
         };
-    
+
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
       }
-    
+
       handleChange(event) {
         this.setState({certid: event.target.value});
       }
-    
+
       handleSubmit(event) {
             var certid = this.state.certid;
             var certsplit = certid.split("/", 2);
@@ -107,7 +107,7 @@ class Verify extends Component {
             .catch(err => {
                 self.setState({certError: "Incorrect Certificate ID"});
             });
-           
+
             event.preventDefault();
       }
 
@@ -129,7 +129,7 @@ class Verify extends Component {
               id="certid"
               label="Certificate ID"
               name="certid"
-              value={this.state.certid} 
+              value={this.state.certid}
               onChange={this.handleChange}
             />
             {this.state.certError && (
@@ -186,11 +186,11 @@ class Verify extends Component {
           {/* Footer */}
           <footer className={classes.footer}>
             <Typography variant="h6" align="center" gutterBottom>
-              With <span role="img" aria-label="heart">❤️</span> from DSC NSEC
+              With <span role="img" aria-label="heart">❤️</span> from inGenius
             </Typography>
             <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-              <Link color="inherit" href="https://dscnsec.com">
-                Explore DSC NSEC
+              <Link color="inherit" href="https://dscnsec.com"> //change the link
+                Explore inGenius
               </Link>
             </Typography>
           </footer>

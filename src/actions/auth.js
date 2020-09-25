@@ -66,7 +66,7 @@ export const loginUser = (email) => dispatch => {
   var actionCodeSettings = {
     // URL you want to redirect back to. The domain (www.example.com) for this
     // URL must be whitelisted in the Firebase Console.
-    url: 'https://certificates.dscnsec.com',
+    url: 'http://localhost:3000/', //change local link to domain link
     // This must be true.
     handleCodeInApp: true,
   };

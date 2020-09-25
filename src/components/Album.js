@@ -106,17 +106,17 @@ class Album extends Component {
         .catch((err) => {
           console.log('Error getting documents', err);
         });
-        
+
 			} else {
 				self.setState({ user: null });
 			}
-			
+
 			if (self.state.loading) {
 				self.setState({ loading: false });
 			}
 		});
   };
-  
+
   handleLogout = () => {
     const { dispatch } = this.props;
     dispatch(logoutUser());
@@ -196,11 +196,11 @@ class Album extends Component {
         {/* Footer */}
         <footer className={classes.footer}>
           <Typography variant="h6" align="center" gutterBottom>
-            With <span role="img" aria-label="heart">❤️</span> from DSC NSEC
+            With <span role="img" aria-label="heart">❤️</span> from inGenius
           </Typography>
           <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-            <Link color="inherit" href="https://dscnsec.com">
-              Explore DSC NSEC
+            <Link color="inherit" href="https://dscnsec.com"> {/*change link*/}
+              Explore inGenius
             </Link>
           </Typography>
           <Copyright />
