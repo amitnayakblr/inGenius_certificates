@@ -71,6 +71,10 @@ const styles = (theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  errorText: {
+    margin: 10,
+    textAlign: "center"
+  },
 });
 
 class Album extends Component {
@@ -132,7 +136,7 @@ class Album extends Component {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            DSC NSEC Certificates
+           inGenius Certificates
           </Typography>
           <Button color="inherit" onClick={this.handleLogout} >Logout</Button>
         </Toolbar>
@@ -146,7 +150,7 @@ class Album extends Component {
                 Certificates
               </Typography>
               <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                All your wonderful earnings with DSC NSEC, centrally stored, available for verification for ever!
+                All your wonderful earnings with inGenius, centrally stored, available for verification forever!
               </Typography>
             </Container>
           </div>
@@ -199,7 +203,7 @@ class Album extends Component {
             With <span role="img" aria-label="heart">❤️</span> from inGenius
           </Typography>
           <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-            <Link color="inherit" href="https://dscnsec.com"> {/*change link*/}
+            <Link color="inherit" href="https://ingeniushack.tech/">
               Explore inGenius
             </Link>
           </Typography>

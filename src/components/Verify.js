@@ -21,7 +21,7 @@ import { myFirebase, db } from '../firebase/firebase';
 const styles = (theme) => ({
   "@global": {
     body: {
-      backgroundColor: "#fff"
+      backgroundColor: "#01132b"
     }
   },
   paper: {
@@ -42,8 +42,8 @@ const styles = (theme) => ({
   },
   errorText: {
     color: "#f50057",
-    marginBottom: 5,
-    textAlign: "center"
+    margin: 5,
+    textAlign: "center",
   },
   card: {
     height: '100%',
@@ -57,6 +57,7 @@ const styles = (theme) => ({
     flexGrow: 1,
   },
   footer: {
+    color:"#fff",
     padding: theme.spacing(3, 2),
     marginTop: 'auto',
   },
@@ -188,8 +189,8 @@ class Verify extends Component {
             <Typography variant="h6" align="center" gutterBottom>
               With <span role="img" aria-label="heart">❤️</span> from inGenius
             </Typography>
-            <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-              <Link color="inherit" href="https://dscnsec.com"> //change the link
+            <Typography variant="subtitle1" align="center" color="white" component="p">
+              <Link color="inherit" href="https://ingeniushack.tech/"> 
                 Explore inGenius
               </Link>
             </Typography>
